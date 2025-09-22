@@ -154,14 +154,23 @@
         }
 
         .logo {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             font-weight: 700;
             color: #F3F4F6;
-            display: inline;
+            display: inline-block;
+            white-space: nowrap;
         }
 
-        .logo::before { content: '< '; color: #9CA3AF; display: inline; }
-        .logo::after { content: ' />'; color: #9CA3AF; display: inline; }
+        .logo::before { 
+            content: '< '; 
+            color: #9CA3AF; 
+            display: inline; 
+        }
+        .logo::after { 
+            content: ' />'; 
+            color: #9CA3AF; 
+            display: inline; 
+        }
 
         .nav-links {
             display: flex;
@@ -918,7 +927,7 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">Shubhranshu</div>
+            <span class="logo">Shubhranshu</span>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
